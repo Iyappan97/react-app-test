@@ -27,3 +27,5 @@ else
 fi
 
 echo "Sudo privileges granted to $USER successfully."
+#chmod +x highToJenkns.sh
+#sudo ./highToJenkns.sh
