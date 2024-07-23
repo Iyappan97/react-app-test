@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo su
 cd ../../
 cd /opt/
+sudo su
 echo ---------installing apt update-------------------------------
 apt-get update
 echo----------installing java----------------------------
