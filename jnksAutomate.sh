@@ -2,20 +2,20 @@
 cd ../../
 cd /opt/
 sudo su
-echo ---------installing apt update-------------------------------
+echo ---------getting apt update-------------------------------
 apt-get update
-echo----------installing java----------------------------
+echo----------getting java----------------------------
 add-apt-repository ppa:openjdk-r/ppa
 apt-get update
 apt-get install -y fontconfig openjdk-17-jre openjdk-17-jdk
-echo----------installing jenkins----------------------------
+echo----------getting jenkins ready----------------------------
 wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 apt-get update
 apt-get install jenkins
-echo----------install npm packages-----------------------
+echo----------getting npm packages-----------------------
 apt install npm
-echo----------install docker--------------------------
+echo----------getting docker--------------------------
 wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/installDocker.sh -P /tmp
 chmod 755 /tmp/installDocker.sh
 bash /tmp/installDocker.sh
