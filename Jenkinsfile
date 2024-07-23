@@ -16,7 +16,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("${env.DOCKERHUB_REPO}:${env.BUILD_ID}", '-q .')
+                    dockerImage = docker.build("${env.DOCKERHUB_REPO}:latest", '-q .')
                 }
             }
         }
@@ -30,19 +30,13 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    sh '''
-                        docker push ${DOCKERHUB_REPO}:${env.BUILD_ID}
-                        docker push ${DOCKERHUB_REPO}:latest
-                    '''
+                    sh'docker push ${DOCKERHUB_REPO}:latest'
                 }
             }
         }
         stage('Cleanup Docker Images') {
             steps {
-                 sh '''
-                        docker rmi ${DOCKERHUB_REPO}:${env.BUILD_ID} -f
-                        docker rmi ${DOCKERHUB_REPO}:latest -f
-                '''
+                sh'docker rmi ${DOCKERHUB_REPO}:latest -f'
             }
         }
         stage('Cleanup Workspace') {
