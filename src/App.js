@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
-              modified to check the flow auto deployment 4.11 AM
+              <br /> modified to check the flow auto deployment 4.11 AM
         </p>
         <a
           className="App-link"
