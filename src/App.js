@@ -16,7 +16,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
-          <br /> Modified at {getCurrentTimestamp()} to check CICD flow.
+          <br /> Modified on {getCurrentTimestamp()} to check CICD flow.
         </p>
         <a
           className="App-link"
