@@ -14,8 +14,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p style={{ fontSize: '20px', fontWeight: 'bold' }}>
           THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
+        </p>
+        <p>
           <br /> Modified on {getCurrentTimestamp()} to check CICD flow.
         </p>
         <a
