@@ -14,11 +14,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ fontSize: '20px', fontWeight: 'bold' }}>
+        <p style={{ fontSize: '70px', fontWeight: 'bold' }}>
           THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
         </p>
         <p>
-          <br /> Modified on {getCurrentTimestamp()} to check CICD flow.
+          <br /> Modified on 4.50 to check CICD flow.
+          <br />Refresh to get current Time & date : {getCurrentTimestamp()}
         </p>
         <a
           className="App-link"
