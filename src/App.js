@@ -7,8 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.<br>
-              modified to check the flow auto deployment 3.58 AM
+          THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
+              modified to check the flow auto deployment 4.11 AM
         </p>
         <a
           className="App-link"
