@@ -19,8 +19,9 @@ function App() {
             <br />------ IYAPPAN's ReactApp.
         </p>
         <p>
-          <br /> CICD flow check. Modified on 25/7/2024 04:50:00 .
-          <br />   Deployed at Time & date : {getCurrentTimestamp()}
+          <br /> CICD flow check. 
+          <br /> Modified on 25/7/2024 05:02:00 am
+          <br /> Deployed on {getCurrentTimestamp()}
         </p>
         <a
           className="App-link"
