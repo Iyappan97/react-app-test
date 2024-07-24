@@ -14,12 +14,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ fontSize: '70px', fontWeight: 'bold' }}>
-          THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
+        <p style={{ fontSize: '50px', fontWeight: 'bold' }}>
+          THIS IS MY FIRST PROJECT.
+            <br />------ IYAPPAN's ReactApp.
         </p>
         <p>
-          <br /> Modified on 4.50 to check CICD flow.
-          <br />Refresh to get current Time & date : {getCurrentTimestamp()}
+          <br /> CICD flow check. Modified on 25/7/2024 04:50:00 .
+          <br />   Deployed at Time & date : {getCurrentTimestamp()}
         </p>
         <a
           className="App-link"
