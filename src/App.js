@@ -1,14 +1,22 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // Function to get the current timestamp
+  const getCurrentTimestamp = () => {
+    const now = new Date();
+    // Format as per locale, or use toISOString() for ISO format
+    return now.toLocaleString(); 
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           THIS IS MY FIRST PROJECT.--- IYAPPAN's ReactApp.
-              <br /> Modified at 4.21 AM to check CICD flow .
+          <br /> Modified at {getCurrentTimestamp()} to check CICD flow.
         </p>
         <a
           className="App-link"
