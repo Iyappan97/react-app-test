@@ -1,2 +1,2 @@
 Github to docker image push automation
-                - Project by Iyappan......the
+                - Project by Iyappan......the end
