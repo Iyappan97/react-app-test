@@ -20,7 +20,7 @@ function App() {
         </p>
         <p>
           <br /> CICD flow check. 
-          <br /> Modified on 25/7/2024 05:07:00 am
+          <br /> Modified on 25/7/2024 04:23:00 pm
           <br /> Deployed on {getCurrentTimestamp()}
         </p>
         <a
